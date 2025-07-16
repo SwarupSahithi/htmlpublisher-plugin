@@ -102,6 +102,25 @@
           </dependency>
         </dependencies>
       </plugin>
+             <plugin>
+  <groupId>org.bsc.maven</groupId>
+  <artifactId>maven-processor-plugin</artifactId>
+  <version>3.3.3</version>
+  <executions>
+    <execution>
+      <id>process</id>
+      <goals>
+        <goal>process</goal>
+      </goals>
+      <phase>generate-sources</phase>
+      <configuration>
+        <processors>
+          <processor>org.jvnet.hudson.annotation_indexer.AnnotationProcessorImpl</processor>
+        </processors>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
     </plugins>
   </build>
 
@@ -163,5 +182,11 @@
       <version>1.9</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+        <groupId>org.jenkins-ci</groupId>
+        <artifactId>annotation-indexer</artifactId>
+        <version>1.9</version>
+        <scope>provided</scope>
+</dependency>
   </dependencies>
 </project>
