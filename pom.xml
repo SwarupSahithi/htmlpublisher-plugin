@@ -30,12 +30,12 @@
   <version>5.19-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>git plugin</name>
-  <description>git plugin</description>
+  <name>htmlpublisher-plugin.git</name>
+  <description>htmlpublisher-plugin.git</description>
   <inceptionYear>2016</inceptionYear>
 
   <scm>
-    <connection>scm:git:https://github.com/SwarupSahithi/htmlpublisher-plugin.gitt</connection>
+    <connection>scm:git:https://github.com/SwarupSahithi/htmlpublisher-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:https://github.com/SwarupSahithi/htmlpublisher-plugin.git</developerConnection>
     <tag>HEAD</tag>
     <url>https://github.com/SwarupSahithi/htmlpublisher-plugin.git</url>
